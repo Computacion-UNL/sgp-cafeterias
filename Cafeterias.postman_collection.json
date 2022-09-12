@@ -1,0 +1,865 @@
+{
+	"info": {
+		"_postman_id": "3d591819-bd22-4bda-a366-469c52742d4c",
+		"name": "Cafeterias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16935007"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "All Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/address",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/roles",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All entity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/entity",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"entity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@localhost.com\",\n      \"password\":\"Password123\",\n      \"firstname\": \"name\",\n      \"lastname\": \"lastname\",\n      \"dni\":\"1102118976\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/signup",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"email\": \"user@localhost.com\",\n      \"password\":\"Password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/signin",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/currentuser",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"currentuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/logout",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user1@localhost.com\",\n      \"password\":\"Password123\",\n      \"rol\":\"631e9ca641fef489640cd9c9\",\n      \"firstname\": \"name\",\n      \"lastname\": \"lastname\",\n      \"dni\":\"1102118976\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"firstname\": \"name\",\n      \"lastname\": \"lastname\",\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change status user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/changeStatus/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"changeStatus",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\":\"Password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/change-pass/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"change-pass",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current Permissions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/users/currentpermissions",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"currentpermissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recovery Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@localhost.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/password/recovery",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"password",
+								"recovery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@localhost.com\",\n      \"phone\":\"123456789\",\n      \"mainStreet\":\"Machala\",\n      \"secondaryStreet\":\"Machala\",\n      \"firstname\": \"Name\",\n      \"dni\": \"1102119876\",\n      \"lastname\":\"lastname\",\n      \"user\":\"631e9ca441fef489640cd9c3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/address",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update addresss",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@localhost.com\",\n      \"phone\":\"123456789\",\n      \"mainStreet\":\"Machala\",\n      \"secondaryStreet\":\"Machala\",\n      \"firstname\": \"Name\",\n      \"dni\": \"1102119876\",\n      \"lastname\":\"lastname\",\n      \"user\":\"631e9ca441fef489640cd9c3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/users/address/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"users",
+								"address",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "All products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/products",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Malteada",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "3.4",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Descripción",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "631e9ca441fef489640cd9c3",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/home/maria/Descargas/malteada"
+								}
+							]
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/products",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "café",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "des",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "3.4",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/home/maria/Descargas/DRINK-THIS-Second-Best-Winter-Latte-2-425508990"
+								}
+							]
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/products/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change status product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/products/changeStatus/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products",
+								"changeStatus",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/products/categories",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"name\",\n      \"description\":\"description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/products/category",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"name\",\n      \"description\":\"description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/products/category/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products",
+								"category",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change status category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/products/category/changeStatus/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"products",
+								"category",
+								"changeStatus",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "All receipt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/orders/receipts",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								"receipts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/orders/",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Count product receipt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/orders/product-receipt/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								"product-receipt",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All product order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/orders/item-order",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								"item-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/orders/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Receipt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "cafeterias.ec/api/orders/receipts/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								"receipts",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"totalValue\":\"3\",\n      \"table\":\"3\",\n      \"user\":\"631e9ca441fef489640cd9c3\",\n      \"items\":[{\n          \"quantity\":\"2\",\n      \"totalPrice\":\"2\",\n      \"unitPrice\":\"1\"\n      }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/orders/",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save receipt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullName\":\"Karen\",\n      \"dni\":\"3\",\n      \"phone\":\"631e9ca441fef489640cd9c3\",\n      \"email\":\"user@correo.com\",\n      \"address\":\"dirección\",\n      \"order\":\"dfghjklyf\",\n      \"amount\": \"34\",\n      \"type\":\"Efectivo\",\n      \"items\":[{\n          \"quantity\":\"2\",\n      \"totalPrice\":\"2\",\n      \"unitPrice\":\"1\"\n      }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/orders/",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"Completada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "cafeterias.ec/api/orders/631e9ca441fef489640cd9c3",
+							"host": [
+								"cafeterias",
+								"ec"
+							],
+							"path": [
+								"api",
+								"orders",
+								"631e9ca441fef489640cd9c3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
